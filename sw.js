@@ -1,5 +1,4 @@
 
-self.addEventListener('push', (params) => {
-    console.log(params);
+self.addEventListener('push', () => {
     self.registration.sendNotification('Hoxro sends a notification', {});
 });
