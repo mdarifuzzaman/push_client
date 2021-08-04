@@ -1,5 +1,6 @@
 
 self.addEventListener('push', (e) => {
+    console.log(e);
     var options = {
         body: 'This notification was generated from hoxro!',
         icon: 'images/example.png',
