@@ -25,6 +25,6 @@ self.addEventListener('push', (event) => {
         ]        
     };
 
-    e.waitUntil(self.registration.showNotification(title, options));
+    event.waitUntil(self.registration.showNotification(title, options));
 
 });
