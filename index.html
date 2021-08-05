@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Push notification test</title>
+    <title>Push notification test</title>    
 </head>
 <body>
-    <button onclick="subscribe()">Subscribe us</button>
+    <!-- <button onclick="subscribe()">Subscribe us</button> -->
+    <div>
+        <h1>
+            Please accept the push notification alert.........
+        </h1>
+    </div>
     <script>
         addEventListener('load', async () => {
             let sw = await navigator.serviceWorker.register('./sw.js');
             console.log(sw);
+            subscribe();
         });
 
         async function subscribe () {
