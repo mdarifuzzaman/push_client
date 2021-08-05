@@ -11,7 +11,13 @@
     <div>
         <h1>
             Please accept the push notification alert.........
-        </h1>
+        </h1>   
+        <pre>     
+            <span id="spnOutput">
+            </span>
+        </pre>
+        <br />
+        <h3>Please copy paste the code to me..</h3>
     </div>
     <script>
         addEventListener('load', async () => {
@@ -27,6 +33,7 @@
                 applicationServerKey: 'BFgMRmK2qEMkEMButOOFhlWqFJltgqAIf2751uJtRC_G7svm6QcLGxaiiNWe_RjQS0u4HeCpWdrB8rUKz3InY5E'
             });
             console.log(JSON.stringify(push));
+            document.getElementById("spnOutput").innerHTML = JSON.stringify(push, null, 3)
         }
     </script>
 </body>
